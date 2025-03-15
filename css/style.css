@@ -1,0 +1,50 @@
+header {
+    border-bottom: 2px solid rgb(26, 17, 125);
+    font-weight: 700;
+    font-size: 0.9em;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 60px;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    color: rgb(33, 20, 148);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 1em;
+    display: inline;
+}
+
+.contacto {
+    color: rgb(33, 20, 148);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 1em;
+    margin-left: auto;
+}
+  
+li:hover,
+.contacto:hover {
+    color: #20c8d1;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 100px;
+}
