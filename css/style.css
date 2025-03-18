@@ -1,3 +1,4 @@
+/* Estilos para el encabezado */
 header {
     border-bottom: 8px solid rgb(26, 17, 125);
     font-weight: 700;
@@ -8,39 +9,37 @@ header {
     align-items: center;
     background-color: white;
 }
-
+/* Estilos para el pie de página */
 footer {
     background-color: rgb(21, 29, 87);
-    color: white;
-    text-align: center;
     padding: 10px;
-    font-size: 20px;
-    margin-top: auto;
     width: 100%;
 }
-
+/* Estilos para los párrafos dentro del footer */
 footer p {
+    font-size: 20px;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
     line-height: 1.5;
+    color: white;
 }
-
+/* Estilos para el logo de la empresa del header */
 .logo img {
     height: 100px;
 }
-
+/* Estilos para el menú de navegación */
 .menu {
     font-size: 30px;
     padding: 0 1em;
     color: rgb(26, 17, 125);
 }
-
+/* Estilos para los enlaces dentro del menú */
 .menu a {
     color: rgb(26, 17, 125);
     text-decoration: none;
 }
-
+/* Estilos para la sección de contacto en el menú */
 .contacto {
     color: rgb(33, 20, 148);
     font-size: 30px;
@@ -48,24 +47,24 @@ footer p {
     padding: 0 1em;
     margin-left: auto;
 }
-
+/* Estilos para la lista de navegación */
 nav ul {
     list-style: none;
     display: flex;
     gap: 60px;
     justify-content: space-between;
 }
-
+/* Estilos para los elementos de la lista de navegación */
 nav li {
     display: inline;
 }
-
+/* Estilos para los enlaces dentro de la navegación y la sección de contacto al pasar el cursor */
 nav a:hover,
 .contacto a:hover {
     color: #ecefc2;
     cursor: pointer;
 }
-
+/* Estilos generales para el cuerpo de la página */
 body {
     font-family: Verdana, 'Geneva', Tahoma, sans-serif;
     margin: 2px;
@@ -76,7 +75,7 @@ body {
     min-height: 100vh;
     text-align: center;
 }
-
+/* Estilos para la sección de inicio */
 .pagina-inicio {
     display: flex;
     justify-content: center;
@@ -85,7 +84,7 @@ body {
     gap: 40px;
     padding: 50px;
 }
-
+/* Estilo para el contenedor de Imagenes dentro de la seccion Inicio*/
 .imagenes {
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +92,7 @@ body {
     justify-content: center;
     max-width: 90%;
 }
-
+/* Estilos para cada imagen dentro de la seccion Inicio */
 .imagen {
     position: relative;
     flex: 1 1 45%;
@@ -103,7 +102,7 @@ body {
     justify-content: center;
     margin: 50px 0;
 }
-
+/* Estilos para las imágenes dentro del contenedor */
 .imagen img {
     width: 100%;
     height: 400px;
@@ -112,8 +111,9 @@ body {
     opacity: 0.5;
     display: block;
 }
-
+/* Estilos para el texto sobre las imágenes */
 .texto {
+    font-family: Verdana, "Geneva", Tahoma, sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -133,19 +133,19 @@ body {
 .imagen:hover .texto {
     opacity: 1;
 }
-
+/* Estilos para el efecto hover en las imágenes */
 .imagen:hover img {
     opacity: 0;
 }
 
-
-.texto_contacto {
+/* Estilos para los textos dentro de contacto y de nosotros */
+.texto_body {
     text-align: center;
     font-family: Verdana, 'Geneva', Tahoma, sans-serif;
     color: rgb(33, 20, 148);
     padding: 0px;
 }
-
+/* Estilos para el contenedor del formulario de contacto */
 .contenedor_contacto {
     display: flex;
     justify-content: center;
@@ -154,7 +154,7 @@ body {
     padding: 50px;
     min-height: 100vh;
 }
-
+/* Estilos para el formulario completo */
 .formulario_entero {
     box-shadow: 14px 9px 75px -10px rgba(0, 0, 0, 0.4);
     width: 75%;
@@ -165,7 +165,7 @@ body {
     border: 6px double black;
 
 }
-
+/* Estilos para el menú de contacto lateral */
 .menu_contacto {
     width: 300px;
     background-color: rgb(0, 19, 128);
@@ -177,7 +177,7 @@ body {
     margin-left: auto;
     position: relative;
 }
-
+/* Estilos para la lista de contactos en el menú de contacto */
 .contactos_diferentes {
     display: flex;
     flex-direction: column;
@@ -185,7 +185,7 @@ body {
     align-items: center;
     text-align: center;
 }
-
+/* Estilos para la sección de servicios */
 .servicio_entero {
     display: flex;
     flex-wrap: wrap;
@@ -193,26 +193,33 @@ body {
     gap: 40px;
     padding: 50px;
 }
-
+/* Estilos para cada servicio */
 .servicio {
+    font-family:Verdana, "Geneva", Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     max-width: 300px;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(0, 19, 128);
+    color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
 }
-
+/* Estilos para el efecto hover en los servicios */
 .servicio:hover {
     transform: scale(1.05);
 }
-
+/* Estilos para los íconos dentro de los servicios */
 .icono img {
     width: 60px;
     height: 60px;
     margin-bottom: 15px;
+}
+/* Tamaño de la imagen que sale en Nosotros  */
+.logo_empresa{
+    height: 500px;
+    width: 300px;
 }
